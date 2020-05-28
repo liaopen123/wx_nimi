@@ -6,6 +6,7 @@ Page({
    */
   data: {
       msg:"廖鹏辉真帅~",
+      value:"2",
       people:{
         name:"廖鹏辉",
         age:23,

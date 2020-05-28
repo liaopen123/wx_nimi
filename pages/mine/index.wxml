@@ -1,2 +1,7 @@
 <!--pages/mine/index.wxml-->
-<text>pages/mine/index.wxml</text>
+<input type="text" bindinput="handleInput"></input>
+<button bindtap="add" data-operation="{{1}}">add</button>
+<button bindtap="add" data-operation="{{-1}}">deduce</button>
+<view>
+{{value}}
+</view>

@@ -5,7 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
+      value:"1",
+  },
+  handleInput(e){
+   this.setData({
+    value : e.detail.value,
+   });
+  },
 
+  add(e){
+    console.log( e.currentTarget.dataset.operation);
+this.setData(
+  {
+    value:(parseInt(this.data.value)+e.currentTarget.dataset.operation)+"",
+  }
+);
   },
 
   /**

@@ -26,14 +26,33 @@
 block标签：
 </view>
 <view>
-<block wx:for="{{people}}"  class="lph">
+<block  wx:key="people" wx:for="{{people}}"  class="lph">
 属性:{{index}}--value:{{item}}
 </block>
 </view>
 <view>if标签</view>
-<view wx:if={{true}}>
+<view wx:if="{{true}}">
 gaga
 </view>
-<view wx:if={{true}}>
+<view wx:if="{{false}}">
 gaga
+</view>
+
+<view hidden="{{true}}">
+gaga
+</view>
+
+<view>
+if esle 用法
+
+</view>
+
+<view wx:if="{{value}}=='1'">
+当前值是1
+</view>
+<view wx:elif="{{value}}=='2'">
+当前值是2
+</view>
+<view wx:else >
+我就是else
 </view>
