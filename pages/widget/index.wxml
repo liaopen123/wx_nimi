@@ -12,7 +12,40 @@
     <view>rich-text</view>
     <button class=".button01"  bindtap="setRichText">{{showRichText?"隐藏richText":"展示richText"}}</button>
 
-    <video hidden="{{!showRichText}}">   <rich-text nodes="{{html}}"/></video>
- 
-    
+    <view hidden="{{!showRichText}}">   <rich-text nodes="{{html}}"/></view>
+
+    <view>button相关</view>
+    <button size="mini">button size属性</button>
+    <button size="default">button size属性</button>
+ <button type="default">button type属性</button>
+ <button type="warn">button type属性</button>
+  <button type="primary">button type属性</button>
+   <view>button 开放能力 open-type</view>
+    <button open-type="contact">contact</button>
+    <button open-type="share">share</button>
+    <button open-type="getPhoneNumber"  bindgetphonenumber="getPhoneNumber" >getPhoneNumber</button>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">getUserInfo</button>
+    <button open-type="launchApp">launchApp</button>
+    <button open-type="openSetting">openSetting</button>
+    <button open-type="feedback">feedback</button>
+  <view>icon相关</view>
+  <icon size="40" 
+  type="success" color="green"/>
+  <icon size="20" type="clear" color="blue"/>
+ <view>radio 单选框相关</view>
+    <radio-group bindchange="onRadioChange">
+    <radio color="blue" value="male">男</radio>
+    <radio  color="yellow"  value="female">女</radio>
+    </radio-group>
+    <view hidden="{{sex==''}}">
+    <view>选择的性别是:{{sex}}</view>
+    </view>
+
+    <view>复选框checkBox</view>
+<checkbox-group bindchange="onCheckBoxChange"  >
+<checkbox value="male"> 男</checkbox>
+<checkbox value="female"> 女</checkbox>
+</checkbox-group>
+<view>选中的数据有:{{checkBoxContent}}</view>
+
    

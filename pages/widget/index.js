@@ -6,6 +6,8 @@ Page({
    */
   data: {
       showRichText:false,
+      checkBoxContent:"",
+      sex:"",
       list:[
         "https://aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg",
         "https://aecpm.alicdn.com/simba/img/TB14ab1KpXXXXclXFXXSutbFXXX.jpg_q50.jpg",
@@ -19,6 +21,30 @@ Page({
       this.setData({
         showRichText:!this.data.showRichText
       });
+  },
+  getPhoneNumber(e){
+    console.log(e);
+    // wx.showToast({
+    //   title: e,
+    // })
+  },
+  getUserInfo(e){
+    console.log(e);
+  },
+  onRadioChange(e){
+    console.log(e);
+    e.detail.value;
+    this.setData({
+      sex: e.detail.value=="male"?"男":"女"
+    });
+  },
+
+  onCheckBoxChange(e){
+    console.log(e);
+    this.setData({
+      checkBoxContent:e.detail.value,
+    });
+    
   },
   /**
    * 生命周期函数--监听页面加载
