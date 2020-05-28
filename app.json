@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/use_components/index",
     "pages/widget/index",
     "pages/lesscss/index",
     "pages/outercss/index",
