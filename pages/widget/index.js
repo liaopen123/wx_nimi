@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      list:[
+        "https://aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg",
+        "https://aecpm.alicdn.com/simba/img/TB14ab1KpXXXXclXFXXSutbFXXX.jpg_q50.jpg",
+        "https://gw.alicdn.com/imgextra/i2/51/O1CN01K1tCft1CFOnnugEzd_!!51-0-lubanu.jpg",
+        "https://gw.alicdn.com/imgextra/i4/137/O1CN01CFU5jR1CsmrZJ0WsN_!!137-0-lubanu.jpg",
+        
+      ],
   },
 
   /**

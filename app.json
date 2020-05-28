@@ -17,7 +17,7 @@
     "navigationBarTitleText": "廖鹏辉的应用",
     "navigationBarTextStyle":"white",
     "enablePullDownRefresh": true,
-    "backgroundColor": "yellow"
+    "backgroundColor": "#ffffff"
   },
   "tabBar": {
     "selectedColor": "#000000",

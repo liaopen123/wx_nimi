@@ -1,2 +1,11 @@
 <!--pages/widget/index.wxml-->
-<text>pages/widget/index.wxml</text>
+<text selectable="true">pages/widget/index.wxml</text>
+<image class="image01" mode="widthFit" src="https://www.baidu.com/img/flexible/logo/pc/result@2.png"></image>
+<swiper class="swiper01"  >
+  
+         <view wx:for="{{list}}" hover-class="none" hover-stop-propagation="false">
+    <swiper-item >  <image  src="{{item}}" mode="widthFix"/> </swiper-item>
+    </view>
+</swiper>
+    <text>navigator</text>
+    <navigator url="/pages/demo01/demo01"><text class=".text">跳转</text></navigator>

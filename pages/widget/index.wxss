@@ -1,1 +1,23 @@
 /* pages/widget/index.wxss */
+.image01{
+  box-sizing: border-box;
+  border:1px solid blue,;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.swiper01{
+  width: 100%;
+  height:calc(200rpx*750/640);
+}
+
+swiper{
+  width: 100%;
+  height:(200*750/600)rpx;
+}
+image{
+width: 100%;
+}
+.text{
+  color: blue;
+}
