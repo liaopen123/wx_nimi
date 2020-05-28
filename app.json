@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/widget/index",
+    "pages/lesscss/index",
     "pages/outercss/index",
     "pages/cssdemo/index",
     "pages/index/index",
