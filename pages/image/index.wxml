@@ -1,0 +1,39 @@
+<!--pages/image/index.wxml-->
+<text>text 标签是用来显示文字的</text>
+<text>\ntext 标签是用来显示文字的</text>
+<view>1</view>
+<view>2</view>
+<view  hover-class="none" hover-stop-propagation="false">
+{{msg}}    
+</view>
+
+<checkbox checked="{{checked}}"></checkbox>
+
+<view>
+<view wx:for="{{list}}"  wx:key="id"  wx:for-item="item" wx:for-inde="inde">
+<view>{{item.name}}</view>
+<view>{{item.id}}</view>
+</view>
+</view>
+
+<view>
+循环对象:
+<view wx:for="{{people}}">
+属性:{{index}}--value:{{item}}
+</view>
+</view>
+<view>
+block标签：
+</view>
+<view>
+<block wx:for="{{people}}"  class="lph">
+属性:{{index}}--value:{{item}}
+</block>
+</view>
+<view>if标签</view>
+<view wx:if={{true}}>
+gaga
+</view>
+<view wx:if={{true}}>
+gaga
+</view>

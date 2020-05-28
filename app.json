@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/image/index",
+    "pages/mine/index",
+    "pages/search/index",
+    "pages/logs/logs",
+    "pages/demo01/demo01"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "廖鹏辉的应用",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "yellow"
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "color": "#999999",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icon/tab_home_unselect.png",
+      "selectedIconPath": "icon/tab_home_selected.png"
+    },{
+      "pagePath": "pages/image/index",
+      "text": "图片",
+      "iconPath": "icon/tab_course_unselected.png",
+      "selectedIconPath": "icon/tab_course_selected.png"
+    },{
+      "pagePath": "pages/mine/index",
+      "text": "我的",
+      "iconPath": "icon/tab_course_unselected.png",
+      "selectedIconPath": "icon/tab_me_unselect.png"
+    },{
+      "pagePath":"pages/search/index",
+      "text": "搜索",
+      "iconPath": "icon/tab_order_unselected.png",
+      "selectedIconPath": "icon/tab_order_selected.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
