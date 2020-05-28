@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/outercss/index",
+    "pages/cssdemo/index",
     "pages/index/index",
     "pages/image/index",
     "pages/mine/index",

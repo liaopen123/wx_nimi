@@ -1,0 +1,7 @@
+/* pages/cssdemo/index.wxss */
+view{
+  width: 200rpx;
+  height: 200rpx;
+  font-size: 40rpx;
+  background-color: aquamarine;
+}

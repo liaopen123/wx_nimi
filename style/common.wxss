@@ -1,0 +1,6 @@
+view{
+  width: 200rpx;
+  height: 400rpx;
+  background-color: blue;
+  font-size: 40rpx;
+}
