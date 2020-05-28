@@ -9,3 +9,10 @@
 </swiper>
     <text>navigator</text>
     <navigator url="/pages/demo01/demo01"><text class=".text">跳转</text></navigator>
+    <view>rich-text</view>
+    <button class=".button01"  bindtap="setRichText">{{showRichText?"隐藏richText":"展示richText"}}</button>
+
+    <video hidden="{{!showRichText}}">   <rich-text nodes="{{html}}"/></video>
+ 
+    
+   

@@ -21,3 +21,6 @@ width: 100%;
 .text{
   color: blue;
 }
+.button01{
+  width: 500rpx;
+}
