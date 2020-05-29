@@ -1,2 +1,10 @@
 <!--components/tabs/Tabs.wxml-->
-<text>自定义组件</text>
+<view class="tabs">
+<view class="tabs_title">
+<view wx:for="{{list}}" wx:key="id" class="title_items  {{item.isActive==true?'active':''}}"  bindtap="onTitleClick" data-index="{{index}}">
+{{item.title}}
+</view>
+
+</view>
+<view class="tabs_content">内容</view>
+</view> 
