@@ -1,3 +1,5 @@
 <!--pages/use_components/index.wxml-->
 <text>pages/use_components/index.wxml</text>
-<tabs tabs="{{list}}"  bindonTabChange="handleTabChange"></tabs>
+<tabs tabs="{{list}}"  bindonTabChange="handleTabChange">
+<view>hahaha</view>
+</tabs>

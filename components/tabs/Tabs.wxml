@@ -7,5 +7,5 @@
 </view>
 
 </view>
-<view class="tabs_content">内容</view>
+<slot></slot>  
 </view> 
