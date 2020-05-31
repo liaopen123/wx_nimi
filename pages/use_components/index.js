@@ -5,9 +5,33 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    list:[
+      {
+        id:0,
+        title:"首页",
+        isActive:true,
+      },
+      {
+        id:1,
+        title:"原创",
+        isActive:false,
+      },
+      {
+        id:0,
+        title:"分类",
+        isActive:false,
+      },
+      {
+        id:0,
+        title:"关于",
+        isActive:false,
+      },
+    ],
   },
-
+  handleTabChange(e){
+const {index} = e.detail;
+console.log(index);
+},
   /**
    * 生命周期函数--监听页面加载
    */

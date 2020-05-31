@@ -2,7 +2,7 @@
 <view>{{aaa}}</view>
 <view class="tabs">
 <view class="tabs_title">
-<view wx:for="{{list}}" wx:key="id" class="title_items  {{item.isActive==true?'active':''}}"  bindtap="onTitleClick" data-index="{{index}}">
+<view wx:for="{{tabs}}" wx:key="id" class="title_items  {{item.isActive==true?'active':''}}"  bindtap="onTitleClick" data-index="{{index}}">
 {{item.title}}
 </view>
 

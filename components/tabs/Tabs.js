@@ -4,9 +4,15 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    aaa:{
-      type:String,
-      value:""
+    // aaa:{
+    //   type:String,
+    //   value:""
+    // }
+    tabs:{
+      //传值类型
+      type:Array,
+      //传值默认值
+      value:[],
     }
   },
 
@@ -14,28 +20,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-      list:[
-        {
-          id:0,
-          title:"首页",
-          isActive:true,
-        },
-        {
-          id:1,
-          title:"原创",
-          isActive:false,
-        },
-        {
-          id:0,
-          title:"分类",
-          isActive:false,
-        },
-        {
-          id:0,
-          title:"关于",
-          isActive:false,
-        },
-      ],
+     
   },
 
 
@@ -47,11 +32,14 @@ Component({
     onTitleClick(e){
       console.log(e);
       let index = e.currentTarget.dataset.index;
+      this.triggerEvent("onTabChange",{index});
       // console.log("index:"+index);
-      // let {list} = this.data;
-      this.data.list.forEach((v,i)=>i==index?v.isActive=true:v.isActive=false);
+      let {tabs} = this.data;
+      // console.log(tabs);
+      tabs.forEach((v,i)=> v.isActive=(i==index));
+      // tabs.forEach((v,i)=>i==index?v.isActive=true:v.isActive=false);
 this.setData({
-list
+tabs
 });
 
     },
